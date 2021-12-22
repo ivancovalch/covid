@@ -25,6 +25,7 @@ jobs:
         run: |
           echo "Hello message 1"
           echo "Application name is ${{env.application_name}}"
+
   
   worker:
     runs-on: ubuntu-latest
@@ -35,5 +36,9 @@ jobs:
       - name: Run a new env
         run: 
           echo "package_name ${{env.package_name}}"
-      - name: Run directory list
+      - name: Run directory first
         run: ls -la
+      - name: Git clone
+        run: actions/checkout@v1      
+      - name: Run directory after copy
+        run: ls -la        
