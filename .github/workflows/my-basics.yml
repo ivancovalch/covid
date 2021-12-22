@@ -32,4 +32,7 @@ jobs:
     steps:
       - name: Run worker   
         run: echo "Hello world from worker"
-      
+      - name: Run a new env
+        run: "package_name: ${{env.package_name}}"
+      - name: Run a new env
+        run: ls -la
