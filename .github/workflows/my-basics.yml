@@ -30,6 +30,9 @@ jobs:
   worker:
     runs-on: ubuntu-latest
     needs: [testing]
+    env:
+      var1  : "Job2"
+      var2  : "Second"
     steps:
       - name: Run worker   
         run: echo "Hello world from worker"
@@ -44,3 +47,9 @@ jobs:
         run: ls -la  
       - name: Test some packages
         run: aws --version
+      - name: Zipping
+        run: zip
+      - name: Environment
+        run: |
+          echo "Var 1 is ${{env.var1}}"
+          echo "Var 2 is ${{env.var2}}"
