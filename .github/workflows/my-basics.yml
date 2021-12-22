@@ -33,6 +33,7 @@ jobs:
       - name: Run worker   
         run: echo "Hello world from worker"
       - name: Run a new env
-        run: "package_name: ${{env.package_name}}"
+        run: 
+          echo "package_name ${{env.package_name}}"
       - name: Run directory list
         run: ls -la
