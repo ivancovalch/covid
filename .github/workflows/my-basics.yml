@@ -53,3 +53,7 @@ jobs:
         run: |
           echo "Var 1 is ${{env.var1}}"
           echo "Var 2 is ${{env.var2}}"
+          echo "Var 2 is $sloc"
+        env:
+          sloc  : "superlocal"
+            
