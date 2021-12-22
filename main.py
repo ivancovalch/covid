@@ -7,7 +7,7 @@ class MainApp(MDApp):
     def build(self):
         return MDLabel(text = "Hello world", halign = "center")
 
-    
+
 
 
 # Press the green button in the gutter to run the script.
