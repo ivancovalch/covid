@@ -1,4 +1,7 @@
 name: CI
+env:
+  application_name  : "Covid_sertificate"
+  package_name      : "Android-deploy-${{github.sha}}"
 on: # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
