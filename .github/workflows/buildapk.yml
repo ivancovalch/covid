@@ -9,7 +9,9 @@ jobs:
 
     steps:
       - name: Add gettext #added manually due to recomendations https://github.com/kivy-garden/zbarcam/issues/54 https://stackoverflow.com/questions/57982945/how-to-apt-get-install-in-a-github-actions-workflow
-        run: sudo apt-get install gettext
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y gettext
         
       - name: Checkout
         uses: actions/checkout@v2
