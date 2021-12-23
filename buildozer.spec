@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = Daily Monitoring
+title = test
 
 # (str) Package name
-package.name = daily_monitoring
+package.name = test
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.kivymd #id.allasca
