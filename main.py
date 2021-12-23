@@ -1,12 +1,18 @@
+
+from kivy.lang import Builder
 from kivymd.app import MDApp
-from kivymd.uix.label import MDLabel
 
-class MainApp(MDApp):
+from kivymd.uix.boxlayout import MDBoxLayout
+from kivymd.uix.list import IRightBodyTouch
+class Container(IRightBodyTouch, MDBoxLayout):
+    adaptive_width = True
+
+class App(MDApp):
     def build(self):
-        return MDLabel(text = "Hello world", halign = "center")
+        self.title = 'Setting Screen UI'
+        self.theme_cls.primary_palette = "Pink"
+        self.theme_cls.theme_style = "Dark"  # "Light"
+        return Builder.load_file('main.kv')
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    MainApp().run()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+App().run()
