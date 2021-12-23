@@ -7,7 +7,7 @@ title = Daily Monitoring
 package.name = daily_monitoring
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = id.allasca
+package.domain = org.kivymd #id.allasca
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -36,7 +36,7 @@ version = 2.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy, kivymd, webbrowser, beautifulsoup4
+requirements = python3,kivy, kivymd #, webbrowser, beautifulsoup4
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
