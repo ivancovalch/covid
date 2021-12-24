@@ -36,7 +36,7 @@ version = 0.22
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,plyer,kivy==2.0.0,kivymd,https://github.com/kivymd/KivyMD/archive/3274d62.zip,sdl2_ttf==2.0.15
+requirements = python3,kivy==2.0.0,kivymd,https://github.com/kivymd/KivyMD/archive/3274d62.zip,sdl2_ttf==2.0.15
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -49,7 +49,7 @@ requirements = python3,plyer,kivy==2.0.0,kivymd,https://github.com/kivymd/KivyMD
 presplash.filename = %(source.dir)s/data/logo/presplash512.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/data/logo/icon256.png
+icon.filename = %(source.dir)s/data/logo/logo256.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
