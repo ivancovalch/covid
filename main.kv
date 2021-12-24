@@ -1,9 +1,12 @@
-
-Screen:
-    MDBoxLayout:
-        id: bx_main
-        orientation: "vertical"
-        MDLabel:
-            text: "Hello world"
-            #size_hint_x: 1
-            halign: "left"
+<FileChoose>:
+BoxLayout:
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id: result
+            text: ''
+            hint_text: 'selected path'
+        FileChoose:
+            size_hint_y: 0.1
+            on_release: self.choose()
+            text: 'Select a file'
